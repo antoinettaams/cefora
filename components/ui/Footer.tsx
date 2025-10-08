@@ -16,32 +16,30 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
                     {/* Bloc 1 : Logo, nom, description, réseaux */}
                     <div className="space-y-6">
-                        <Link href="/" className="flex items-center">
-                            {/* === NOUVELLES MODIFICATIONS POUR LE LOGO ET TEXTE DU FOOTER === */}
-                            {/* Conteneur du logo avec des tailles réduites et stables pour desktop */}
-                            <div className="relative h-10 w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 rounded-full overflow-hidden">
+                        {/* Utilisation de "gap-3" pour un espacement fluide entre les éléments flex */}
+                        <Link href="/" className="flex items-center gap-3">
+                            {/* Logo responsive */}
+                            <div className="relative w-10 h-10 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full overflow-hidden flex-shrink-0">
                                 <Image
                                     src="/images/images.jpeg"
                                     alt="Logo CEFORA FORMATION"
                                     fill
-                                    priority
-                                    // Tailles de l'image adaptées : 40px mobile, "
-                                    sizes="(max-width: 768px) 40px, (max-width: 1024px) 48px, 56px"
                                     className="object-cover"
+                                    priority
                                 />
                             </div>
-                            {/* Texte "CEFORA FORMATION" avec des tailles réduites pour le footer */}
-                            <span className="text-white text-base sm:text-lg font-bold ml-3 font-title">
+
+                            {/* Texte du logo */}
+                            <span className="text-white font-title text-base sm:text-lg md:text-xl lg:text-2xl font-bold">
                                 CEFORA FORMATION
                             </span>
-                            {/* === FIN DES NOUVELLES MODIFICATIONS === */}
                         </Link>
-                        {/* La description reste lisible sans être surdimensionnée */}
+
                         <p className="text-white leading-relaxed text-base md:text-lg">
-                            Une institution moderne dédiée à l’excellence
-                            académique et à l’innovation.
+                            Une institution moderne dédiée à l&apos;excellence
+                            académique et à l&apos;innovation.
                         </p>
-                        {/* Les icônes de réseaux sociaux restent à une taille confortable */}
+
                         <div className="flex space-x-4 text-xl md:text-2xl text-white">
                             <a
                                 href="#"
@@ -98,6 +96,14 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
+                                    href="/testimonials"
+                                    className="hover:text-yellow-400 transition-colors"
+                                >
+                                    Témoignages
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
                                     href="/blog"
                                     className="hover:text-yellow-400 transition-colors"
                                 >
@@ -112,14 +118,6 @@ export default function Footer() {
                                     Contact
                                 </Link>
                             </li>
-                            <li>
-                                <Link
-                                    href="/inscription"
-                                    className="hover:text-yellow-400 transition-colors"
-                                >
-                                    Inscription
-                                </Link>
-                            </li>
                         </ul>
                     </div>
 
@@ -131,42 +129,42 @@ export default function Footer() {
                         <ul className="space-y-3 text-white text-base md:text-lg">
                             <li>
                                 <Link
-                                    href="/programmes/informatique"
+                                    href="/filieres/numerique-et-technologie"
                                     className="hover:text-yellow-400 transition-colors"
                                 >
-                                    Informatique
+                                    Numérique et technologie
                                 </Link>
                             </li>
                             <li>
                                 <Link
-                                    href="/programmes/gestion"
+                                    href="/filieres/hotellerie-et-restauration"
                                     className="hover:text-yellow-400 transition-colors"
                                 >
-                                    Gestion
+                                    Hôtellerie et Restauration
                                 </Link>
                             </li>
                             <li>
                                 <Link
-                                    href="/programmes/droit"
+                                    href="/filieres/mode-et-beaute"
                                     className="hover:text-yellow-400 transition-colors"
                                 >
-                                    Droit
+                                    Mode et beauté
                                 </Link>
                             </li>
                             <li>
                                 <Link
-                                    href="/programmes/medecine"
+                                    href="/filieres/paramedical-et-social"
                                     className="hover:text-yellow-400 transition-colors"
                                 >
-                                    Médecine
+                                    Paramédical et social
                                 </Link>
                             </li>
                             <li>
                                 <Link
-                                    href="/programmes/auxiliaire"
+                                    href="/filieres/batiment"
                                     className="hover:text-yellow-400 transition-colors"
                                 >
-                                    Auxiliaire
+                                    Bâtiment
                                 </Link>
                             </li>
                         </ul>
@@ -199,7 +197,7 @@ export default function Footer() {
                                     href="#"
                                     className="hover:text-yellow-400 transition-colors"
                                 >
-                                    Forum d’aide
+                                    Forum d&apos;aide
                                 </Link>
                             </li>
                             <li>
@@ -218,7 +216,7 @@ export default function Footer() {
             {/* Copyright */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-[#FED136] text-center text-gray-400 text-sm">
                 <p>
-                    © {new Date().getFullYear()} Céfora Formation. Tous droits
+                    © {new Date().getFullYear()} CEFORA Formation. Tous droits
                     réservés.
                 </p>
             </div>

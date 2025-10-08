@@ -37,23 +37,24 @@ export default function Header() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
                 <div className="flex justify-between items-center">
                     {/* Logo avec taille unifiée et adaptative */}
-                    <Link href="/" className="flex items-center">
-                        {/* Conteneur du logo avec tailles responsives */}
-                        <div className="relative h-10 w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 rounded-full overflow-hidden">
-                            <Image
-                                src="/images/images.jpeg"
-                                alt="Logo CEFORA FORMATION"
-                                fill
-                                priority
-                                // Tailles de l'image adaptées aux points de rupture
-                                sizes="(max-width: 768px) 40px, (max-width: 1024px) 48px, 56px"
-                                className="object-cover"
-                            />
-                        </div>
-                        <span className="text-white text-xs sm:text-lg font-bold ml-3">
-                            CEFORA FORMATION
-                        </span>
+                     <Link href="/" className="flex items-center gap-3">
+                      {/* Logo responsive */}
+                      <div className="relative w-10 h-10 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full overflow-hidden flex-shrink-0">
+                        <Image
+                          src="/images/images.jpeg"
+                          alt="Logo CEFORA FORMATION"
+                          fill
+                          className="object-cover"
+                          priority
+                        />
+                      </div>
+                    
+                      {/* Texte du logo */}
+                      <span className="text-white text-base sm:text-lg md:text-xl lg:text-2xl font-bold">
+                        CEFORA FORMATION
+                      </span>
                     </Link>
+                    
 
                     {/* Navigation Desktop (visible sur md et plus grand) */}
                     <nav className="hidden lg:flex items-center space-x-3 lg:space-x-5">
@@ -126,6 +127,7 @@ export default function Header() {
                             { href: "/about", label: "À propos" },
                             { href: "/testimonials", label: "Témoignages" },
                             { href: "/blog", label: "Blog" },
+                            { href: "/teachers", label: "Formateurs" },
                             { href: "/contact", label: "Contact" },
                         ].map(({ href, label }) => (
                             <Link
@@ -138,7 +140,7 @@ export default function Header() {
                         ))}
                     </nav>
 
-                    {/* Bouton CTA (Appel à l'action) pour desktop */}
+                    {/* Bouton CTA (Appel à l&apos;action) pour desktop */}
                     <div className="hidden lg:flex">
                         <Link
                             href="/inscription"
@@ -234,6 +236,7 @@ export default function Header() {
                             { href: "/about", label: "À propos" },
                             { href: "/testimonials", label: "Témoignages" },
                             { href: "/blog", label: "Blog" },
+                            { href: "/teachers", label: "Formateurs" },
                             { href: "/contact", label: "Contact" },
                         ].map(({ href, label }) => (
                             <Link

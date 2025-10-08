@@ -2,7 +2,7 @@ export default function Testimonials() {
   return (
     <main className="bg-white text-black">
       {/* Header section */}
-      <section className="bg-[#0a0a0a] text-white py-16 px-6 text-center">
+      <section className="bg-[#232C64] text-white py-16 px-6 text-center">
         <h2 className="text-4xl font-bold mb-4">
           Ce que nos Étudiants<br /> disent à propos de <span className="text-yellow-400">CEFORA FORMATION</span>
         </h2>

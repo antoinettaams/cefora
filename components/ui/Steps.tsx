@@ -50,7 +50,7 @@ export default function SectionSteps() {
                 <span className="font-medium text-xs font-title">Choisir une formation.</span>
             </div>
             <p className="text-xs mt-1">
-                J‘ai d‘abord contacté CEFORA pour m‘informer sur leurs formations. Ils m‘ont bien guidée !
+                J&apos;ai d&apos;abord contacté CEFORA pour m&apos;informer sur leurs formations. Ils m&apos;ont bien guidée !
             </p>
         </div>
 
@@ -75,7 +75,7 @@ export default function SectionSteps() {
                 <span className="font-medium text-xs font-title">Remplir le dossier.</span>
             </div>
             <p className="text-xs mt-1">
-                L‘inscription a été fait en ligne. L‘équipe est très réactive !
+                L&apos;inscription a été fait en ligne. L&apos;équipe est très réactive !
             </p>
         </div>
 
@@ -121,7 +121,7 @@ export default function SectionSteps() {
 
         {/* Colonne droite - Version mobile optimisée */}
         <div className="pt-3 md:pt-6 flex flex-col">
-  <h2 className="sm:text-xl md:text-3xl font-bold mb-2 md:mb-4 font-title">S‘inscrire chez CEFORA Formation</h2>
+  <h2 className="sm:text-xl md:text-3xl font-bold mb-2 md:mb-4 font-title">S&apos;inscrire chez CEFORA Formation</h2>
   <p className="text-gray-300 mb-3 text-xs md:text-base">
     Suivez ces étapes simples pour rejoindre nos formations professionnelles certifiantes.
   </p>

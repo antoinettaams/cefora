@@ -48,7 +48,7 @@ const Sofware = () => {
               <p className="text-gray-600 mb-6">
                 Nos formations sont pratiques, innovantes et vous permettent de vous 
                 insérer facilement dans la vie socio-professionnelle. Vous pouvez être
-                autonome et compétitif sur le marché de l’emploi. Commencez vos études
+                autonome et compétitif sur le marché de l&apos;emploi. Commencez vos études
                 à Cefora Formation et continuez dans des pays africain et européen.
               </p>
               <Link

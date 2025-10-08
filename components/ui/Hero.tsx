@@ -21,7 +21,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-12">
         
-        {/* Colonne gauche (Texte) - après l'image sur mobile */}
+        {/* Colonne gauche (Texte) - après l&apos;image sur mobile */}
         <div className="text-white w-full md:w-1/2 max-w-2xl text-center md:text-left px-2 sm:px-0">
           <h1 className="font-title text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] font-bold leading-tight">
             Centre de formation
@@ -37,7 +37,7 @@ export default function Hero() {
           <div className="mt-6 md:mt-8">
             <Link
               href="#"
-              aria-label="Commencer l'inscription"
+              aria-label="Commencer l&apos;inscription"
               className="inline-block bg-[#DB3234] text-white font-semibold text-base md:text-lg py-3 px-6 md:py-3.5 md:px-8 rounded-full transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ffc947]"
             >
               Commencer
@@ -49,7 +49,7 @@ export default function Hero() {
         <div className="w-full md:w-1/2 relative h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[500px]">
           
           {/* Cercle jaune */}
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[250px] sm:w-[300px] md:w-[350px] aspect-square rounded-full bg-yellow-400 z-0"></div>
+          <div className="absolute mt-25 left-1/2 -translate-x-1/2 w-[250px] sm:w-[300px] md:w-[350px] aspect-square rounded-full bg-yellow-400 z-0"></div>
 
           {/* Losanges décoratifs */}
           <div className="hidden sm:block">
@@ -63,28 +63,32 @@ export default function Hero() {
           </div>
 
           <div className="absolute inset-0 flex items-center justify-center z-10">
-            <div className="relative w-full h-full max-w-md mx-auto">
+            {/* Hauteur fixe pour cadrer l&apos;image */}
+            <div className="relative w-[850px] h-[450px] max-w-md mx-auto">
               <Image
-                src="/images/photo.png"
+                src="/images/hero.png"
                 alt="Solution innovante"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
-                style={{ objectFit: "contain", objectPosition: "center bottom" }}
-                className="transition-transform duration-500 hover:scale-105"
+                style={{ 
+                  objectFit: "cover", 
+                  objectPosition: "center 60%" 
+                }}
+                className="ml-10 transition-transform duration-500 hover:scale-105"
                 priority
               />
             </div>
           </div>
 
           {/* Témoignages - version mobile */}
-          <div className="md:hidden  gap-4 absolute bottom-0 left-0 right-0 flex justify-around z-20 px-4 mb-[4vh]">
+          <div className="md:hidden gap-4 absolute bottom-0 left-0 right-0 flex justify-around z-20 px-4 mb-[4vh]">
             <div className="bg-white p-2 rounded-lg shadow-lg flex items-center space-x-2 max-w-[160px]">
               <div className="w-8 h-8 rounded-full overflow-hidden">
                 <Image src="/images/deux.png" alt="Sophie M." width={32} height={32} className="object-cover" />
               </div>
               <div>
                 <p className="text-xs font-medium text-gray-800">Sophie M.</p>
-                <p className="text-[0.65rem] text-gray-500">“Formateurs...“</p>
+                <p className="text-[0.65rem] text-gray-500">&ldquo;Formateurs...&ldquo;</p>
               </div>
             </div>
             <div className="bg-white p-2 rounded-lg shadow-lg flex items-center space-x-2 max-w-[160px]">
@@ -93,7 +97,7 @@ export default function Hero() {
               </div>
               <div>
                 <p className="text-xs font-medium text-gray-800">Pierre L.</p>
-                <p className="text-[0.65rem] text-gray-500">“Certification...“</p>
+                <p className="text-[0.65rem] text-gray-500">&ldquo;Certification...&ldquo;</p>
               </div>
             </div>
           </div>
@@ -106,7 +110,7 @@ export default function Hero() {
               </div>
               <div>
                 <p className="text-sm font-medium text-gray-800">Sophie M.</p>
-                <p className="text-xs text-gray-500">“Formateurs à l‘écoute“</p>
+                <p className="text-xs text-gray-500">&ldquo;Formateurs à l&apos;écoute&ldquo;</p>
               </div>
             </div>
             <div className="absolute bottom-20 left-0 bg-white p-3 rounded-lg shadow-lg flex items-center space-x-3 max-w-[220px] z-20 mt-6">
@@ -115,7 +119,7 @@ export default function Hero() {
               </div>
               <div>
                 <p className="text-sm font-medium text-gray-800">Pierre L.</p>
-                <p className="text-xs text-gray-500">“Certification rapide“</p>
+                <p className="text-xs text-gray-500">&ldquo;Certification rapide&ldquo;</p>
               </div>
             </div>
           </div>
