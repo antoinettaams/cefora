@@ -17,12 +17,11 @@ export default function SectionSteps() {
       </div>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-stretch">
-        {/* Colonne gauche - Version mobile optimisée */}
         <div className="relative pl-4 md:pl-8 h-full flex flex-col space-y-3 md:space-y-4">
             
-          {/* Premier commentaire (jaune) */}
+          {/* Premier commentaire */}
          <div className="bg-yellow-400 text-black p-3 rounded-md shadow-lg relative w-full md:w-3/4 z-10">
-            {/* Flèche supplémentaire en haut à droite */}
+            {/* Flèche en haut à droite */}
             <div className="absolute -top-4 -right-8 w-6 h-6 z-20">
                 <Image 
                     src="/images/shapes (1).png" 
@@ -33,7 +32,7 @@ export default function SectionSteps() {
                 />
             </div>
 
-            {/* Losanges décoratifs existants */}
+            {/* Losanges décoratifs */}
             <div className="absolute -top-5 -left-5 w-2 h-2 md:w-3 md:h-3 bg-[#DB3234] rotate-45 z-20"></div>
             <div className="absolute ml-[50%] -mt-[12%] w-2 h-2 md:w-3 md:h-3 bg-[#00d084] rotate-45 z-20"></div>
             <div className="flex items-center gap-2">
@@ -54,7 +53,7 @@ export default function SectionSteps() {
             </p>
         </div>
 
-        {/* Flèche jaune vers orange - Mobile friendly */}
+        {/* Flèche jaune */}
         <div className="w-full flex justify-center px-2">
             <Image 
               src="/images/Vector 28.png" 
@@ -66,9 +65,9 @@ export default function SectionSteps() {
             />
         </div>
 
-        {/* Deuxième commentaire (orange) */}
+        {/* Deuxième commentaire */}
         <div className="bg-orange-400 sm:ml-[23%] lg:ml-[23%] text-white p-3 rounded-md shadow-lg relative w-11/12 md:w-1/2 mx-auto z-10">
-            {/* Losanges décoratifs existants */}
+            {/* Losanges décoratifs */}
             <div className="absolute -ml-15 -left-1 w-2 h-2 md:w-3 md:h-3 bg-[#8C8C8C] rotate-45 z-20"></div>
             <div className="absolute -bottom-10 -right-15 w-2 h-2 md:w-3 md:h-3 bg-[#FED136] rotate-45 z-20"></div>
             <div className="flex items-center gap-2">
@@ -79,7 +78,7 @@ export default function SectionSteps() {
             </p>
         </div>
 
-        {/* Flèche orange vers rouge - Mobile friendly */}
+        {/* Flèche orange */}
         <div className="w-11/12 flex justify-center px-2">
             <Image 
               src="/images/Vector 29.png" 
@@ -90,9 +89,9 @@ export default function SectionSteps() {
             />
         </div>
 
-        {/* Troisième commentaire (rouge) */}
+        {/* Troisième commentaire */}
         <div className="bg-[#DB3234] text-white p-3 rounded-md shadow-lg relative w-full md:w-3/4 z-10">
-            {/* Flèche supplémentaire en haut à gauche */}
+            {/* Flèche en haut à gauche */}
             <div className="absolute -top-4 -left-7 w-6 h-6 z-20">
                 <Image 
                     src="/images/shapes (2).png" 
@@ -119,36 +118,34 @@ export default function SectionSteps() {
           </div>
         </div>
 
-        {/* Colonne droite - Version mobile optimisée */}
         <div className="pt-3 md:pt-6 flex flex-col">
-  <h2 className="sm:text-xl md:text-3xl font-bold mb-2 md:mb-4 font-title">S&apos;inscrire chez CEFORA Formation</h2>
-  <p className="text-gray-300 mb-3 text-xs md:text-base">
-    Suivez ces étapes simples pour rejoindre nos formations professionnelles certifiantes.
-  </p>
+          <h2 className="sm:text-xl md:text-3xl font-bold mb-2 md:mb-4 font-title">S&apos;inscrire chez CEFORA Formation</h2>
+            <p className="text-gray-300 mb-3 text-xs md:text-base">
+              Suivez ces étapes simples pour rejoindre nos formations professionnelles certifiantes.
+            </p>
 
-  {/* Losanges alignés - Version mobile */}
-  <div className="relative flex-grow min-h-[100px] md:min-h-[150px]">
-    {/* Étape 1 */}
-    <div className="absolute top-[10%] md:top-[15%] left-0 flex items-start">
-      <div className="w-3 h-3 md:w-4 md:h-4 bg-yellow-400 rotate-45"></div>
-      <span className="ml-2 text-xs md:text-sm text-gray-300">Choisir une formation</span>
-    </div>
+            {/* Losanges alignés - Version mobile */}
+            <div className="relative flex-grow min-h-[100px] md:min-h-[150px]">
+              {/* Étape 1 */}
+              <div className="absolute top-[10%] md:top-[15%] left-0 flex items-start">
+                <div className="w-3 h-3 md:w-4 md:h-4 bg-yellow-400 rotate-45"></div>
+                <span className="ml-2 text-xs md:text-sm text-gray-300">Choisir une formation</span>
+              </div>
 
-    {/* Étape 2 */}
-    <div className="absolute top-[45%] md:top-[50%] left-[15%] md:left-[20%] flex items-start">
-      <div className="w-3 h-3 md:w-4 md:h-4 bg-orange-400 rotate-45"></div>
-      <span className="ml-2 text-xs md:text-sm text-gray-300">Remplir le dossier</span>
-    </div>
+              {/* Étape 2 */}
+              <div className="absolute top-[45%] md:top-[50%] left-[15%] md:left-[20%] flex items-start">
+                <div className="w-3 h-3 md:w-4 md:h-4 bg-orange-400 rotate-45"></div>
+                <span className="ml-2 text-xs md:text-sm text-gray-300">Remplir le dossier</span>
+              </div>
 
-    {/* Étape 3 */}
-    <div className="absolute top-[80%] md:top-[85%] left-[30%] md:left-[40%] flex items-start">
-      <div className="w-3 h-3 md:w-4 md:h-4 bg-red-500 rotate-45"></div>
-      <span className="ml-2 text-xs md:text-sm text-gray-300">Commencer la formation</span>
-    </div>
-  </div>
-</div>
-
-      </div>
+              {/* Étape 3 */}
+              <div className="absolute top-[80%] md:top-[85%] left-[30%] md:left-[40%] flex items-start">
+                <div className="w-3 h-3 md:w-4 md:h-4 bg-red-500 rotate-45"></div>
+                <span className="ml-2 text-xs md:text-sm text-gray-300">Commencer la formation</span>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
   );
 }

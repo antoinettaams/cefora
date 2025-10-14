@@ -1,7 +1,7 @@
 export default function Testimonials() {
   return (
     <main className="bg-white text-black">
-      {/* Header section */}
+      {/* Section Header */}
       <section className="bg-[#232C64] text-white py-16 px-6 text-center">
         <h2 className="text-4xl font-bold mb-4">
           Ce que nos Étudiants<br /> disent à propos de <span className="text-yellow-400">CEFORA FORMATION</span>
@@ -11,7 +11,7 @@ export default function Testimonials() {
         </p>
       </section>
 
-      {/* First testimonials section */}
+      {/* Première section témoignages*/}
       <section className="py-16 px-6 max-w-6xl mx-auto">
         <h3 className="text-2xl font-semibold mb-8">
           Meilleur diplômé en génie logiciel
@@ -57,7 +57,7 @@ export default function Testimonials() {
         </div>
       </section>
 
-      {/* Second testimonials section */}
+      {/* Deuxième section témoignages */}
       <section className="py-16 px-6 max-w-6xl mx-auto">
         <h3 className="text-2xl font-semibold mb-8">
           Meilleur diplômé en génie logiciel
@@ -103,7 +103,7 @@ export default function Testimonials() {
         </div>
       </section>
 
-      {/* Call to action */}
+      {/* Appel à l'action */}
       <section className="py-16 bg-gradient-to-r from-yellow-400 to-orange-500 text-center text-black">
         <h3 className="text-2xl font-semibold mb-6">
           Rejoignez-nous pour réussir ensemble

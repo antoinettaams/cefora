@@ -36,9 +36,8 @@ export default function Header() {
         <header className="bg-[#232C64] sticky top-0 z-50 w-full font-title">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
                 <div className="flex justify-between items-center">
-                    {/* Logo avec taille unifiée et adaptative */}
+                    {/* Logo */}
                      <Link href="/" className="flex items-center gap-3">
-                      {/* Logo responsive */}
                       <div className="relative w-10 h-10 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full overflow-hidden flex-shrink-0">
                         <Image
                           src="/images/images.jpeg"
@@ -49,16 +48,16 @@ export default function Header() {
                         />
                       </div>
                     
-                      {/* Texte du logo */}
+                      {/* Titre */}
                       <span className="text-white text-base sm:text-lg md:text-xl lg:text-2xl font-bold">
                         CEFORA FORMATION
                       </span>
                     </Link>
                     
 
-                    {/* Navigation Desktop (visible sur md et plus grand) */}
+                    {/* Navigation Desktop */}
                     <nav className="hidden lg:flex items-center space-x-3 lg:space-x-5">
-                        {/* Dropdown "Filières" */}
+                        {/* Menu "Filières" */}
                         <div className="relative" ref={menuRef}>
                             <div className="flex flex-col items-center">
                                 <button
@@ -78,8 +77,8 @@ export default function Header() {
                                     <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-56 bg-white rounded-md shadow-lg z-50 border border-gray-100 overflow-hidden">
                                         {[
                                             {
-                                                href: "/filieres/numerique-et-technologie",
-                                                label: "Numérique et technologie",
+                                                href: "/filieres/developpement-web",
+                                                label: "Développement Web",
                                             },
                                             {
                                                 href: "/filieres/hotellerie-et-restauration",
@@ -122,7 +121,7 @@ export default function Header() {
                             </div>
                         </div>
 
-                        {/* Autres liens de navigation desktop */}
+                        {/* Autres liens de navigation */}
                         {[
                             { href: "/about", label: "À propos" },
                             { href: "/testimonials", label: "Témoignages" },
@@ -140,7 +139,7 @@ export default function Header() {
                         ))}
                     </nav>
 
-                    {/* Bouton CTA (Appel à l&apos;action) pour desktop */}
+                    {/* Bouton CTA */}
                     <div className="hidden lg:flex">
                         <Link
                             href="/inscription"
@@ -150,7 +149,7 @@ export default function Header() {
                         </Link>
                     </div>
 
-                    {/* Bouton Menu Mobile (visible uniquement sur mobile) */}
+                    {/* Bouton Menu Mobile */}
                     <div className="lg:hidden flex items-center">
                         <button
                             onClick={() =>
@@ -168,7 +167,7 @@ export default function Header() {
                 {/* Menu Mobile déroulant */}
                 {isMobileMenuOpen && (
                     <div className="lg:hidden mt-3 space-y-2 bg-white rounded-lg shadow-xl p-3 text-gray-800">
-                        {/* Section "Filières" dans le menu mobile */}
+                        {/* Section "Filières" */}
                         <div className="border-b border-gray-100 pb-2">
                             <button
                                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -188,8 +187,8 @@ export default function Header() {
                                 <div className="pl-4 pt-1 space-y-1">
                                     {[
                                         {
-                                            href: "/filieres/numerique-et-technologie",
-                                            label: "Numérique et technologie",
+                                            href: "/filieres/developpement-web",
+                                            label: "Développement Web",
                                         },
                                         {
                                             href: "/filieres/hotellerie-et-restauration",
@@ -249,7 +248,7 @@ export default function Header() {
                             </Link>
                         ))}
 
-                        {/* Bouton CTA "Commencer" pour mobile */}
+                        {/* Bouton CTA "Commencer" */}
                         <Link
                             href="/inscription"
                             className="block mt-2 text-center bg-[#DB3234] text-white py-2.5 rounded-full font-medium hover:bg-[#e55600] transition shadow-md"

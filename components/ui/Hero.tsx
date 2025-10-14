@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="relative w-full min-h-[calc(100vh-80px)] bg-[#232C64] overflow-hidden pt-20 pb-10 md:pt-24 md:pb-16">
       
-      {/* Quadrillage en arrière-plan */}
+     {/* Quadrillage en arrière-plan */}
       <div className="absolute inset-0 grid grid-cols-6 grid-rows-5 z-0 pointer-events-none">
         {Array.from({ length: 30 }).map((_, i) => (
           <div
@@ -21,13 +21,13 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-12">
         
-        {/* Colonne gauche (Texte) - après l&apos;image sur mobile */}
-        <div className="text-white w-full md:w-1/2 max-w-2xl text-center md:text-left px-2 sm:px-0">
+        {/* Ttexte  description*/}
+        <div className="ml-10 text-white w-full md:w-1/2 max-w-2xl text-center md:text-left px-2 sm:px-0">
           <h1 className="font-title text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] font-bold leading-tight">
             Centre de formation
           </h1>
           <div className="relative mt-2 md:mt-4">
-            <span className="font-title text-2xl sm:text-6xl md:text-[3.5rem] lg:text-[4.5rem] font-bold tracking-tight block">
+            <span className="font-title text-2xl sm:text-6xl md:text-[2.5rem] lg:text-[3.5rem] font-bold tracking-tight block">
               professionnelle
             </span>
           </div>
@@ -45,8 +45,8 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Colonne droite (Image) - vient en premier sur mobile */}
-        <div className="w-full md:w-1/2 relative h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[500px]">
+        {/* Image */}
+        <div className="w-full md:w-1/2 relative h-[300px] mb-15 sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[500px]">
           
           {/* Cercle jaune */}
           <div className="absolute mt-25 left-1/2 -translate-x-1/2 w-[250px] sm:w-[300px] md:w-[350px] aspect-square rounded-full bg-yellow-400 z-0"></div>
@@ -63,8 +63,7 @@ export default function Hero() {
           </div>
 
           <div className="absolute inset-0 flex items-center justify-center z-10">
-            {/* Hauteur fixe pour cadrer l&apos;image */}
-            <div className="relative w-[850px] h-[450px] max-w-md mx-auto">
+            <div className="relative w-[850px] h-[460px] max-w-md mx-auto">
               <Image
                 src="/images/hero.png"
                 alt="Solution innovante"
@@ -104,7 +103,7 @@ export default function Hero() {
 
           {/* Témoignages - version desktop */}
           <div className="hidden md:block">
-            <div className="absolute top-40 right-0 bg-white p-3 rounded-lg shadow-lg flex items-center space-x-3 max-w-[220px] z-20 mt-6">
+            <div className="absolute top-35 right-0 bg-white p-3 rounded-lg shadow-lg flex items-center space-x-3 max-w-[220px] z-20 mt-6">
               <div className="w-10 h-10 rounded-full overflow-hidden">
                 <Image src="/images/cache.jpg" alt="Sophie M." width={40} height={40} className="object-cover" />
               </div>

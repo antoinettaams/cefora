@@ -1,4 +1,3 @@
-// app/teachers/page.tsx
 import Image from "next/image";
 
 interface Teacher {
@@ -46,7 +45,7 @@ export default function TeachersPage() {
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-900">
-          Enseignants avec les <span className="text-blue-600">meilleures qualifications</span>
+          Enseignants avec les <span className="text-[#232C64]">meilleures qualifications</span>
 
         </h1>
         <p className="mt-2 text-gray-600">

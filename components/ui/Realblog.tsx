@@ -1,4 +1,3 @@
-// components/BlogPreviewsSection.js
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -20,13 +19,12 @@ const Realblog = () => {
               className="object-cover transition-all duration-500 group-hover:scale-110"
             />
             
-            {/* Overlay visible au survol */}
             <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <h3 className="font-title text-white text-xl font-bold mb-2">Soudure Industrielle</h3>
               <p className="text-gray-200 text-sm mb-4">
                 Formation complète en techniques de soudage avec certification reconnue
               </p>
-              <Link href="/filieres/soudure" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm transition-colors self-start">
+              <Link href="/filieres/industrie-et-artisanat" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm transition-colors self-start">
                 Découvrir la filière
               </Link>
             </div>
@@ -42,11 +40,11 @@ const Realblog = () => {
             />
             
             <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h3 className="font-title text-white text-xl font-bold mb-2">Arts Culinaires</h3>
+              <h3 className="font-title text-white text-xl font-bold mb-2">Restauration</h3>
               <p className="text-gray-200 text-sm mb-4">
                 Devenez chef professionnel avec notre programme intensif
               </p>
-              <Link href="/filieres/soudure" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm transition-colors self-start">
+              <Link href="/filieres/hotellerie-et-restauration" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm transition-colors self-start">
                 Découvrir la filière
               </Link>
             </div>
@@ -55,18 +53,18 @@ const Realblog = () => {
           {/* Carte 3 - Logistique */}
           <div className="relative h-80 rounded-xl overflow-hidden group">
             <Image
-              src="/images/logistique.jpg"
+              src="/images/coiffure.jpg"
               alt="Formation logistique"
               fill
               className="object-cover transition-all duration-500 group-hover:scale-110"
             />
             
             <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h3 className="font-title text-white text-xl font-bold mb-2">Transport & Logistique</h3>
+              <h3 className="font-title text-white text-xl font-bold mb-2">Mode et Beauté</h3>
               <p className="text-gray-200 text-sm mb-4">
-                Maîtrisez la gestion de la chaîne d’approvisionnement
+                Développez des compétences clés : créativité, sens des tendances, culture mode et rigueur technique.
               </p>
-             <Link href="/filieres/soudure" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm transition-colors self-start">
+             <Link href="/filieres/mode-et-beaute" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm transition-colors self-start">
                 Découvrir la filière
              </Link>
             </div>

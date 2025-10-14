@@ -7,8 +7,8 @@ export default function ContactPage() {
   const [role, setRole] = useState("Directeur");
 
   return (
-    <div className="relative bg-[#0B0D21] min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Quadrillage de fond */}
+    <div className="relative bg-[#232C64] min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Quadrillage*/}
       <div className="absolute inset-0 grid grid-cols-6 grid-rows-5 pointer-events-none z-0">
         {Array.from({ length: 30 }).map((_, i) => {
           const isLastCol = (i + 1) % 6 === 0;
@@ -26,9 +26,9 @@ export default function ContactPage() {
 
       {/* Contenu principal de la page */}
       <div className="container relative z-10 flex flex-col lg:flex-row items-center justify-center gap-8 md:gap-12 px-4 md:px-8 lg:px-12 py-8 md:py-12">
-        {/* Colonne gauche (Image et Texte) */}
+        {/* Image et Texte */}
         <div className="flex-1 w-full max-w-lg text-center lg:text-left">
-          {/* Lien de retour en haut */}
+          {/* Redirection vers la page d'accueil */}
           <div className="mb-6 md:mb-10 lg:mb-20">
             <Link 
               href="/" 
@@ -47,13 +47,12 @@ export default function ContactPage() {
           </div>
 
           <div className="relative inline-block w-full flex justify-center lg:justify-start">
-            {/* Élément jaune derrière */}
+            {/* Cercle */}
             <div className="absolute -z-10 w-[280px] h-[135px] md:w-[400px] md:h-[180px] lg:w-[450px] lg:h-[169px] bg-[#FED136] rounded-xl top-16 md:top-20 lg:top-25 left-1/2 -translate-x-1/2 lg:left-0 lg:translate-x-0" />
             
-            {/* Conteneur principal pour l&apos;image + étoiles */}
             <div className="relative w-[300px] h-[300px] mx-auto">
               
-              {/* Image recadrée (garder exactement la même disposition) */}
+              {/* Image */}
               <div className="w-[220px] h-[200px] md:w-[280px] md:h-[260px] lg:w-[300px] lg:h-[270px] overflow-hidden rounded-xl relative mx-auto">
                 <Image
                   src="/images/contact.png"
@@ -80,7 +79,6 @@ export default function ContactPage() {
                       position: "absolute",
                       top: "50%",
                       left: "50%",
-                      // Rayon fixe pour toutes tailles d&apos;écran
                       transform: `rotate(${star.angle}deg) translate(130px) rotate(-${star.angle}deg)`,
                       transformOrigin: "center",
                     }}
@@ -100,7 +98,7 @@ export default function ContactPage() {
           </p>
         </div>
 
-        {/* Colonne droite (Formulaire) */}
+        {/* Formulaire */}
         <div className="flex-1 w-full max-w-md bg-transparent mt-8 md:mt-12 lg:mt-15 space-y-4 md:space-y-6">
           <input
             type="text"
@@ -132,7 +130,7 @@ export default function ContactPage() {
                       : "bg-transparent border-gray-600 text-white hover:border-yellow-400"
                   }`}
                 >
-                  {/* Cercle avec bordure de démarcation */}
+                  {/* Cercle */}
                   <div className={`w-4 h-4 rounded-full flex items-center justify-center ${
                     role === r 
                       ? "border-2 border-black" 
@@ -148,7 +146,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Bouton "Apply" */}
+          {/* Bouton "Envoyer" */}
           <button className="w-full md:w-[120px] h-12 mt-4 md:mt-6 rounded-full font-bold text-white bg-gradient-to-r from-yellow-500 to-orange-500 hover:opacity-90 transition text-sm md:text-base">
             Envoyez
           </button>

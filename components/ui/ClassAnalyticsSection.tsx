@@ -1,4 +1,3 @@
-// components/CombinedSections.tsx
 import React from "react";
 import Image from "next/image";
 import { FaChartLine, FaUserGraduate, FaClock } from "react-icons/fa";
@@ -51,7 +50,7 @@ export const ClassAnalyticsSection = () => {
           </div>
         </section>
 
-        {/* Section Private Class */}
+        {/* Section qui somme-nous */}
         <section className="w-full">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-10">
 
@@ -59,7 +58,7 @@ export const ClassAnalyticsSection = () => {
               {/* Demi-cercle avec dégradé jaune → clair */}
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[280px] sm:w-[350px] md:w-[400px] h-[140px] sm:h-[175px] md:h-[200px] rounded-t-full z-0 bg-gradient-to-t from-yellow-600 to-yellow-100" />
 
-              {/* Conteneur image avec bords arrondis + au-dessus du cercle */}
+              {/* Conteneur image avec bords arrondis */}
               <div className="absolute inset-0 flex items-start justify-center overflow-hidden z-10">
                 <Image
                   src="/images/hero3.png"
@@ -74,7 +73,7 @@ export const ClassAnalyticsSection = () => {
                 />
               </div>
 
-              {/* Losanges flottants autour de l&apos;image */}
+              {/* Losanges flottants */}
               <div className="absolute top-[25%] left-[12%] w-2.5 sm:w-3 h-2.5 sm:h-3 bg-[#DB3234] transform rotate-45 opacity-80 z-20" />
               <div className="absolute top-[28%] right-[18%] w-3 sm:w-4 h-3 sm:h-4 bg-[#232C64] transform rotate-45 opacity-70 z-20" />
               <div className="absolute bottom-[18%] left-[22%] w-3 sm:w-3.5 h-3 sm:h-3.5 bg-[#00d084] transform rotate-45 opacity-75 z-20" />
@@ -135,7 +134,6 @@ export const ClassAnalyticsSection = () => {
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row items-stretch gap-8 md:gap-12 lg:gap-16">
 
-              {/* Left Side - Content */}
               <div className="md:w-1/2 space-y-6">
                 {/* Title */}
                 <h2 className="font-title text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
@@ -151,7 +149,6 @@ export const ClassAnalyticsSection = () => {
                   l&apos;entreprenariat.
                 </p>
 
-                {/* Features List */}
                 <ul className="space-y-4 mt-6">
                   <li className="flex items-start">
                     <svg
@@ -197,11 +194,11 @@ export const ClassAnalyticsSection = () => {
                 </Link>
               </div>
 
-              {/* Right Side - Image */}
+              {/* Image */}
               <div className="md:w-1/2 relative w-full h-[320px] sm:h-[400px] md:h-[500px]">
                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[280px] sm:w-[350px] md:w-[400px] h-[140px] sm:h-[175px] md:h-[200px] rounded-t-full z-0 bg-gradient-to-t from-red-600 to-red-50" />
 
-                {/* Conteneur image avec bords arrondis + au-dessus du cercle */}
+                {/* Conteneur image avec bords arrondis */}
                 <div className="absolute inset-0 flex items-start justify-center rounded-b-full overflow-hidden z-10">
                   <Image
                     src="/images/joêl.png"

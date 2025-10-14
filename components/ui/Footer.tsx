@@ -16,7 +16,6 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
                     {/* Bloc 1 : Logo, nom, description, réseaux */}
                     <div className="space-y-6">
-                        {/* Utilisation de "gap-3" pour un espacement fluide entre les éléments flex */}
                         <Link href="/" className="flex items-center gap-3">
                             {/* Logo responsive */}
                             <div className="relative w-10 h-10 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full overflow-hidden flex-shrink-0">
@@ -29,8 +28,8 @@ export default function Footer() {
                                 />
                             </div>
 
-                            {/* Texte du logo */}
-                            <span className="text-white font-title text-base sm:text-lg md:text-xl lg:text-2xl font-bold">
+                            {/* Titre */}
+                            <span className="text-white font-title text-base sm:text-lg md:text-sm lg:text-xl font-bold">
                                 CEFORA FORMATION
                             </span>
                         </Link>
@@ -129,10 +128,10 @@ export default function Footer() {
                         <ul className="space-y-3 text-white text-base md:text-lg">
                             <li>
                                 <Link
-                                    href="/filieres/numerique-et-technologie"
+                                    href="/filieres/developpement-web"
                                     className="hover:text-yellow-400 transition-colors"
                                 >
-                                    Numérique et technologie
+                                    Développement Web
                                 </Link>
                             </li>
                             <li>
