@@ -136,7 +136,7 @@ export const ClassAnalyticsSection = () => {
 
               <div className="md:w-1/2 space-y-6">
                 {/* Title */}
-                <h2 className="font-title text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                <h2 className="font-title text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
                   Formations techniques et professionnelles
                 </h2>
 
