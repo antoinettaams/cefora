@@ -14,7 +14,7 @@ export default function Hero() {
 
   return (
     <>
-      {/* SECTION HERO */}
+      {/* SECTION HERO */} 
       <section className="relative w-full min-h-[calc(80vh-80px)] bg-[#232C64] overflow-hidden pt-16 pb-8 md:pt-20 md:pb-20">
         {/* Quadrillage en arrière-plan */}
         <div className="absolute inset-0 grid grid-cols-6 grid-rows-5 z-0 pointer-events-none">

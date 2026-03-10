@@ -20,9 +20,10 @@ const Realblog = () => {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             
-            <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h3 className="font-title text-white text-xl font-bold mb-2">Soudure Industrielle</h3>
-              <p className="text-gray-200 text-sm mb-4">
+            {/* Overlay semi-transparent permanent */}
+            <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-6">
+              <h3 className="font-title text-white text-xl font-bold mb-2 drop-shadow-lg">Soudure Industrielle</h3>
+              <p className="text-gray-200 text-sm mb-4 drop-shadow-md">
                 Formation complète en techniques de soudage avec certification reconnue
               </p>
               <Link href="/filieres/industrie-et-artisanat" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm transition-colors self-start">
@@ -41,9 +42,9 @@ const Realblog = () => {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             
-            <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h3 className="font-title text-white text-xl font-bold mb-2">Restauration</h3>
-              <p className="text-gray-200 text-sm mb-4">
+            <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-6">
+              <h3 className="font-title text-white text-xl font-bold mb-2 drop-shadow-lg">Restauration</h3>
+              <p className="text-gray-200 text-sm mb-4 drop-shadow-md">
                 Devenez chef professionnel avec notre programme intensif
               </p>
               <Link href="/filieres/hotellerie-et-restauration" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm transition-colors self-start">
@@ -52,7 +53,7 @@ const Realblog = () => {
             </div>
           </div>
 
-          {/* Carte 3 - Logistique */}
+          {/* Carte 3 - Mode et Beauté */}
           <div className="relative h-80 rounded-xl overflow-hidden group">
             <Image
               src="/images/coiffure.jpg"
@@ -62,14 +63,14 @@ const Realblog = () => {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             
-            <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h3 className="font-title text-white text-xl font-bold mb-2">Mode et Beauté</h3>
-              <p className="text-gray-200 text-sm mb-4">
+            <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-6">
+              <h3 className="font-title text-white text-xl font-bold mb-2 drop-shadow-lg">Mode et Beauté</h3>
+              <p className="text-gray-200 text-sm mb-4 drop-shadow-md">
                 Développez des compétences clés : créativité, sens des tendances, culture mode et rigueur technique.
               </p>
-             <Link href="/filieres/mode-et-beaute" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm transition-colors self-start">
+              <Link href="/filieres/mode-et-beaute" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm transition-colors self-start">
                 Découvrir la filière
-             </Link>
+              </Link>
             </div>
           </div>
 
