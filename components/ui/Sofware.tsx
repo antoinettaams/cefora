@@ -51,7 +51,7 @@ const Sofware = () => {
               </p>
               <Link
                 href="/contact"
-                className="bg-[#DB3234] text-white px-4 py-2 rounded-full font-medium"
+                className="bg-[#DB3234] text-white px-4 py-2 rounded-full font-medium hover:bg-[#c42d2f] transition-colors duration-300 inline-block"
               >
                 En savoir plus +
               </Link>

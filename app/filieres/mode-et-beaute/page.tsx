@@ -12,7 +12,7 @@ export default function Hero() {
     { day: '06', month: 'Octobre', year: '2025-2026', time: '8H:00 – 17H:00', action: 'Rentrée' },
   ];
 
-  return (
+  return ( 
     <>
       {/* SECTION HERO */}
       <section className="relative w-full min-h-[calc(80vh-80px)] bg-[#232C64] overflow-hidden pt-16 pb-8 md:pt-20 md:pb-20">
@@ -32,33 +32,33 @@ export default function Hero() {
           {/* Texte description */}
           <div className="text-white w-full md:w-1/2 max-w-2xl text-center md:text-left px-2 sm:px-0">
             <h1 className="font-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[3.5rem] font-bold leading-tight">
-               Mode & Beauté
+              Mode &amp; Beauté
             </h1>
             <p className="text-base md:text-lg text-gray-300 mt-3 md:mt-4 max-w-md mx-auto md:mx-0">
-              Apprenez les techniques professionnelles de la mode, du maquillage et de la coiffure pour travailler dans l’esthétique et le stylisme.
+              Apprenez les techniques professionnelles de la mode, du maquillage et de la coiffure pour travailler dans l&apos;esthétique et le stylisme.
             </p>
           </div>
 
           {/* Image */}
           <div className="w-full md:w-1/2 relative h-[220px] sm:h-[260px] md:h-[300px] lg:h-[400px] xl:h-[380px]">
             <div className="absolute left-1/2 -translate-x-1/2 bottom-8 w-[180px] h-[90px] sm:w-[220px] sm:h-[110px] md:w-[260px] md:h-[130px] lg:w-[300px] lg:h-[150px] xl:w-[320px] xl:h-[160px] rounded-b-full z-0 bg-gradient-to-b from-yellow-600 to-yellow-100" />
-              <div className="absolute inset-0 flex items-center justify-center z-10">
-                <div className=" relative w-[165px] h-[165px] sm:w-[240px] sm:h-[240px] md:w-[245px] md:h-[245px] lg:w-[310px] lg:h-[340px] xl:w-[320px] xl:h-[320px] max-w-md mx-auto overflow-hidden rounded-b-[50%]">
-                  <Image
-                    src="/images/abouthero.png"
-                    alt="Industrie et Artisanat"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                      style={{
-                        objectFit: "cover",
-                        objectPosition: "center 60%",
-                      }}
-                    className="transition-transform duration-500 hover:scale-105"
-                    priority
-                  />
-                </div>
+            <div className="absolute inset-0 flex items-center justify-center z-10">
+              <div className="relative w-[165px] h-[165px] sm:w-[240px] sm:h-[240px] md:w-[245px] md:h-[245px] lg:w-[310px] lg:h-[340px] xl:w-[320px] xl:h-[320px] max-w-md mx-auto overflow-hidden rounded-b-[50%]">
+                <Image
+                  src="/images/abouthero.png"
+                  alt="Industrie et Artisanat"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "center 60%",
+                  }}
+                  className="transition-transform duration-500 hover:scale-105"
+                  priority
+                />
               </div>
             </div>
+          </div>
         </div>
       </section>
 
@@ -75,7 +75,7 @@ export default function Hero() {
           <div className="flex justify-center gap-6">
             {[
               { color: "#FDBA21", text: "Maquillage professionnel", textColor: "#0F172A" },
-              { color: "#F43F3E", text: "Coiffure & Stylisme", textColor: "#fff" },
+              { color: "#F43F3E", text: "Coiffure &amp; Stylisme", textColor: "#fff" },
               { color: "#1E3AFF", text: "Soins esthétiques", textColor: "#fff" },
             ].map((item, index) => (
               <div key={index} className="flex items-center gap-2 px-6 py-3 rounded-full font-medium whitespace-nowrap shadow-sm"
@@ -101,9 +101,9 @@ export default function Hero() {
 
           <div className="flex justify-center gap-6">
             {[
-              { color: "#F43F3E", text: "Mode & tendances", textColor: "#fff" },
+              { color: "#F43F3E", text: "Mode &amp; tendances", textColor: "#fff" },
               { color: "#1E3AFF", text: "Projets pratiques", textColor: "#fff" },
-              { color: "#FDBA21", text: "Événements & défilés", textColor: "#0F172A" },
+              { color: "#FDBA21", text: "Événements &amp; défilés", textColor: "#0F172A" },
             ].map((item, index) => (
               <div key={index} className="flex items-center gap-2 px-6 py-3 rounded-full font-medium whitespace-nowrap shadow-sm"
                    style={{ backgroundColor: item.color, color: item.textColor }}>
@@ -123,7 +123,7 @@ export default function Hero() {
             <span className="text-[#0F172A]">Haute Couture et Stylisme</span>
           </h2>
           <p className="text-gray-500 leading-relaxed max-w-md mx-auto md:mx-0 text-base md:text-lg">
-            Explorez l'univers du design vestimentaire, du croquis à la création sur-mesure. Apprenez à concervoir, couper, coudre et sublimer chaque pièce.
+            Explorez l&apos;univers du design vestimentaire, du croquis à la création sur-mesure. Apprenez à concevoir, couper, coudre et sublimer chaque pièce.
           </p>
 
           <div className="grid grid-cols-2 gap-y-4 gap-x-6 justify-items-start md:justify-items-start mt-8 max-w-sm mx-auto md:mx-0">
@@ -150,16 +150,17 @@ export default function Hero() {
           <div className="relative w-[280px] sm:w-[320px] md:w-[350px] h-[180px] sm:h-[220px] md:h-[350px] rounded-xl overflow-hidden shadow-xl z-10">
             <Image
               src="/images/couture.jpg"
-              alt="Étudiant Mode & Beauté"
+              alt="Étudiant Mode &amp; Beauté"
               fill
               className="object-cover"
+              sizes="(max-width: 768px) 280px, (max-width: 1024px) 320px, 350px"
             />
           </div>
         </div>
       </section>
 
       {/* SECTION PLANNING DES COURS */}
-      <section className="-ml-13 bg-white p-8 md:p-16 lg:p-20 font-sans text-gray-800">
+      <section className="bg-white p-8 md:p-16 lg:p-20 font-sans text-gray-800">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-12 text-center md:text-left">
           Planning des cours
         </h1>
@@ -167,20 +168,20 @@ export default function Hero() {
           {scheduleData.map((item, index) => (
             <div key={index} className="flex flex-col items-center md:items-start text-center md:text-left">
               <div className="mb-6">
-              <p className="text-5xl md:text-6xl font-bold inline-block mr-2 text-gray-900">
-                {item.day}
-              </p>
-              <p className="text-base font-medium inline-block align-top mt-2">
-                {item.month}
+                <p className="text-5xl md:text-6xl font-bold inline-block mr-2 text-gray-900">
+                  {item.day}
+                </p>
+                <p className="text-base font-medium inline-block align-top mt-2">
+                  {item.month}
                   <br />
-                {item.year}
-              </p>
-              <div className="flex items-center justify-center md:justify-start mt-3 text-sm text-gray-600">
-                <FaRegClock className="mr-2 text-yellow-600 text-base" />
-                {item.time}
+                  {item.year}
+                </p>
+                <div className="flex items-center justify-center md:justify-start mt-3 text-sm text-gray-600">
+                  <FaRegClock className="mr-2 text-yellow-600 text-base" />
+                  {item.time}
+                </div>
               </div>
-            </div>
-            <div className="border-t border-gray-300 w-full mb-6 max-w-xs md:max-w-none"></div>
+              <div className="border-t border-gray-300 w-full mb-6 max-w-xs md:max-w-none"></div>
               <p className="text-xl font-semibold mt-4">{item.action}</p>
             </div>
           ))}

@@ -5,7 +5,7 @@ import { BsCheck } from "react-icons/bs";
 import { FaRegClock } from 'react-icons/fa'; 
 
 export default function Hero() {
-// Données de la section planning
+  // Données de la section planning
   const scheduleData = [
     { day: '15', month: 'Septembre', year: '2025-2026', time: '8H:00 – 17H:00', action: 'Inscription' },
     { day: '02', month: 'Octobre', year: '2025-2026', time: '8H:00 – 17H:00', action: 'Pré-rentrée' },
@@ -32,7 +32,7 @@ export default function Hero() {
           {/* Texte, description */}
           <div className="text-white w-full md:w-1/2 max-w-2xl text-center md:text-left px-2 sm:px-0">
             <h1 className="font-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[3.5rem] font-bold leading-tight">
-              Bâtiment & Construction
+              Bâtiment &amp; Construction
             </h1>
             <p className="text-base md:text-lg text-gray-300 mt-3 md:mt-4 max-w-md mx-auto md:mx-0">
               Apprenez les techniques de construction, architecture et gestion de chantier pour devenir un professionnel compétent du secteur du bâtiment.
@@ -40,10 +40,10 @@ export default function Hero() {
           </div>
 
           {/* Image */}
-        <div className="w-full md:w-1/2 relative h-[220px] sm:h-[260px] md:h-[300px] lg:h-[400px] xl:h-[380px]">
-          <div className="absolute left-1/2 -translate-x-1/2 bottom-8 w-[180px] h-[90px] sm:w-[220px] sm:h-[110px] md:w-[260px] md:h-[130px] lg:w-[300px] lg:h-[150px] xl:w-[320px] xl:h-[160px] rounded-b-full z-0 bg-gradient-to-b from-yellow-600 to-yellow-100" />
+          <div className="w-full md:w-1/2 relative h-[220px] sm:h-[260px] md:h-[300px] lg:h-[400px] xl:h-[380px]">
+            <div className="absolute left-1/2 -translate-x-1/2 bottom-8 w-[180px] h-[90px] sm:w-[220px] sm:h-[110px] md:w-[260px] md:h-[130px] lg:w-[300px] lg:h-[150px] xl:w-[320px] xl:h-[160px] rounded-b-full z-0 bg-gradient-to-b from-yellow-600 to-yellow-100" />
             <div className="absolute inset-0 flex items-center justify-center z-10">
-              <div className=" relative w-[165px] h-[165px] sm:w-[240px] sm:h-[240px] md:w-[245px] md:h-[245px] lg:w-[310px] lg:h-[340px] xl:w-[320px] xl:h-[320px] max-w-md mx-auto overflow-hidden rounded-b-[50%]">
+              <div className="relative w-[165px] h-[165px] sm:w-[240px] sm:h-[240px] md:w-[245px] md:h-[245px] lg:w-[310px] lg:h-[340px] xl:w-[320px] xl:h-[320px] max-w-md mx-auto overflow-hidden rounded-b-[50%]">
                 <Image
                   src="/images/abouthero.png"
                   alt="Industrie et Artisanat"
@@ -89,7 +89,7 @@ export default function Hero() {
           <div className="flex justify-center gap-20">
             {[
               { color: "#FDBA21", text: "Sécurité sur chantier", textColor: "#0F172A" },
-              { color: "#FDBA21", text: "Matériaux & normes", textColor: "#0F172A" },
+              { color: "#FDBA21", text: "Matériaux &amp; normes", textColor: "#0F172A" },
             ].map((item, index) => (
               <div key={index} className="flex items-center gap-2 px-6 py-3 rounded-full font-medium whitespace-nowrap shadow-sm"
                    style={{ backgroundColor: item.color, color: item.textColor }}>
@@ -109,7 +109,7 @@ export default function Hero() {
             <span className="text-[#0F172A]">Electricité Bâtiment</span>
           </h2>
           <p className="text-gray-500 leading-relaxed max-w-md mx-auto md:mx-0 text-base md:text-lg">
-            Formez-vous à l'installation, la maintenance et la sécurisation des systèmes électriques.
+            Formez-vous à l&apos;installation, la maintenance et la sécurisation des systèmes électriques.
           </p>
 
           <div className="grid grid-cols-2 gap-y-4 gap-x-6 justify-items-start md:justify-items-start mt-8 max-w-sm mx-auto md:mx-0">
@@ -136,16 +136,17 @@ export default function Hero() {
           <div className="relative w-[280px] sm:w-[320px] md:w-[350px] h-[180px] sm:h-[220px] md:h-[250px] rounded-xl overflow-hidden shadow-xl z-10">
             <Image
               src="/images/batiment.jpg"
-              alt="Étudiant Bâtiment & Construction"
+              alt="Étudiant Bâtiment &amp; Construction"
               fill
               className="object-cover"
+              sizes="(max-width: 768px) 280px, (max-width: 1024px) 320px, 350px"
             />
           </div>
         </div>
       </section>
 
       {/* SECTION PLANNING DES COURS */}
-      <section className="-ml- bg-white p-8 md:p-16 lg:p-20 font-sans text-gray-800">
+      <section className="bg-white p-8 md:p-16 lg:p-20 font-sans text-gray-800">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-12 text-center md:text-left">
           Planning des cours
         </h1>
@@ -158,7 +159,7 @@ export default function Hero() {
                 </p>
                 <p className="text-base font-medium inline-block align-top mt-2">
                   {item.month}
-                    <br />
+                  <br />
                   {item.year}
                 </p>
                 <div className="flex items-center justify-center md:justify-start mt-3 text-sm text-gray-600">
@@ -167,11 +168,11 @@ export default function Hero() {
                 </div>
               </div>
               <div className="border-t border-gray-300 w-full mb-6 max-w-xs md:max-w-none"></div>
-                <p className="text-xl font-semibold mt-4">{item.action}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+              <p className="text-xl font-semibold mt-4">{item.action}</p>
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   );
 }

@@ -45,6 +45,7 @@ export default function Header() {
                           fill
                           className="object-cover"
                           priority
+                          sizes="(max-width: 640px) 40px, (max-width: 768px) 40px, (max-width: 1024px) 48px, 56px"
                         />
                       </div>
                     
@@ -143,7 +144,7 @@ export default function Header() {
                     <div className="hidden lg:flex">
                         <Link
                             href="/inscription"
-                            className="bg-[#DB3234] text-white px-4 py-2 rounded-full font-medium hover:opacity-90  text-xs whitespace-nowrap shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200"
+                            className="bg-[#DB3234] text-white px-4 py-2 rounded-full font-medium hover:opacity-90 text-xs whitespace-nowrap shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200"
                         >
                             Commencer
                         </Link>

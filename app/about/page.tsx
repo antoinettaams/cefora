@@ -35,7 +35,7 @@ const About = () => {
                   marginBottom: '-20px',
                 }}
               >
-                “
+                &ldquo;
               </div>
 
               <div className="ml-4 sm:ml-12 md:ml-20 lg:ml-32 xl:ml-32 relative md:mt-0 -mt-2">
@@ -62,7 +62,7 @@ const About = () => {
                   lineHeight: '0.5',
                 }}
               >
-                “
+                &ldquo;
               </div>
             </div>
           </div>
@@ -81,9 +81,8 @@ const About = () => {
                   <Image
                     src="/images/école.jpg"
                     alt="Centre CEFORA FORMATION"
-                    layout="fill"
-                    objectFit="cover"
-                    className="transition-transform duration-500 group-hover:scale-105"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-yellow-400 to-transparent opacity-70"></div>
@@ -92,7 +91,7 @@ const About = () => {
                 {/* Titre */}
                 <div className="absolute bottom-6 left-0 right-0 text-center text-white z-10">
                   <h3 className="font-title font-bold text-lg">Notre Centre</h3>
-                  <p className="text-sm opacity-90">  CEFORA FORMATION</p>
+                  <p className="text-sm opacity-90">CEFORA FORMATION</p>
                 </div>
               </div>
 
@@ -102,9 +101,8 @@ const About = () => {
                   <Image
                     src="/images/directeur.jpg"
                     alt="Directeur CEFORA FORMATION"
-                    layout="fill"
-                    objectFit="cover"
-                    className="transition-transform duration-500 group-hover:scale-105"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-blue-700 to-transparent opacity-70"></div>
@@ -123,9 +121,8 @@ const About = () => {
                   <Image
                     src="/images/censeur.jpg"
                     alt="Censeur CEFORA FORMATION"
-                    layout="fill"
-                    objectFit="cover"
-                    className="transition-transform duration-500 group-hover:scale-105"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-red-700 to-transparent opacity-70"></div>
@@ -150,7 +147,7 @@ const About = () => {
                   <span className="text-[#FED136] font-title">À propos</span> <br /> de nous
                 </h2>
                 <p className="text-gray-700 mb-4 sm:mb-6 text-base sm:text-lg">
-                  Nous réinventons l'apprentissage pour former des professionnels compétents et épanouis, prêts à exceller dans un monde en évolution.
+                  Nous réinventons l&apos;apprentissage pour former des professionnels compétents et épanouis, prêts à exceller dans un monde en évolution.
                 </p>
 
                 <div className="mt-4 sm:mt-6">
@@ -162,7 +159,7 @@ const About = () => {
                   </Link>
                 </div>
               </div>
-<div className="w-full lg:w-3/5 flex flex-col gap-8 sm:gap-10 relative items-center lg:items-start">
+              <div className="w-full lg:w-3/5 flex flex-col gap-8 sm:gap-10 relative items-center lg:items-start">
                 <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-8 ml-0 sm:ml-10 md:ml-16">
                   <div className="flex flex-col items-center">
                     <div className="relative mt-5 sm:mt-8">
@@ -170,7 +167,7 @@ const About = () => {
                       <div className="w-36 sm:w-40 h-52 sm:h-60 bg-gray-200 rounded-3xl overflow-hidden mb-3">
                         <Image
                           src="/images/etudiant.jpg"
-                          alt="Etudian CEFORA FORMATION"
+                          alt="Etudiant CEFORA FORMATION"
                           width={160}
                           height={240}
                           className="w-full h-full object-cover"
@@ -178,7 +175,7 @@ const About = () => {
                       </div>
                     </div>
                     <span className="text-gray-700 font-medium text-base sm:text-lg">
-                      Joie & Paix
+                      Joie &amp; Paix
                     </span>
                   </div>
                   <div className="pt-3 sm:pt-6 relative text-center sm:text-left">
@@ -232,9 +229,8 @@ const About = () => {
                   <Image
                     src="/images/salle.jpg"
                     alt="Innovation"
-                    layout="fill"
-                    objectFit="cover"
-                    className="transition-transform duration-500 group-hover:scale-105"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-yellow-400 to-transparent opacity-70"></div>
@@ -247,9 +243,8 @@ const About = () => {
                   <Image
                     src="/images/école.jpg"
                     alt="Protection"
-                    layout="fill"
-                    objectFit="cover"
-                    className="transition-transform duration-500 group-hover:scale-105"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-blue-700 to-transparent opacity-70"></div>
@@ -262,9 +257,8 @@ const About = () => {
                   <Image
                     src="/images/two-prof.jpg"
                     alt="Expertise"
-                    layout="fill"
-                    objectFit="cover"
-                    className="transition-transform duration-500 group-hover:scale-105"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-red-700 to-transparent opacity-70"></div>
@@ -286,12 +280,12 @@ const About = () => {
                 <div className="text-gray-700 text-base space-y-3">
                   <p>
                     Chez <span className="font-semibold text-[#232C64] font-title">CEFORA</span>{" "}
-                    <span className="font-semibold text-[#DB3234] font-title">FORMATION</span>, nous façonnons l'avenir
-                    de nos apprenants grâce à des formations pratiques, innovantes et tournées vers l'emploi.
+                    <span className="font-semibold text-[#DB3234] font-title">FORMATION</span>, nous façonnons l&apos;avenir
+                    de nos apprenants grâce à des formations pratiques, innovantes et tournées vers l&apos;emploi.
                   </p>
                   <p>
                     Nos parcours vous rendent autonomes, compétitifs et prêts à réussir,
-                    ici comme à l'international. Commencez à Cotonou, progressez en Afrique
+                    ici comme à l&apos;international. Commencez à Cotonou, progressez en Afrique
                     et en Europe grâce à nos partenariats.
                   </p>
                 </div>

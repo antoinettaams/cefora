@@ -54,7 +54,7 @@ const Awards = () => {
       case 'bronze':
         return <FaAward className="text-amber-600 text-2xl" />;
       default:
-       return <FaMedal className="text-gray-500 text-2xl" />;
+        return <FaMedal className="text-gray-500 text-2xl" />;
     }
   };
 

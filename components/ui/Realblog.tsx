@@ -17,6 +17,7 @@ const Realblog = () => {
               alt="Formation soudure"
               fill
               className="object-cover transition-all duration-500 group-hover:scale-110"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             
             <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -37,6 +38,7 @@ const Realblog = () => {
               alt="Formation restauration"
               fill
               className="object-cover transition-all duration-500 group-hover:scale-110"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             
             <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -54,9 +56,10 @@ const Realblog = () => {
           <div className="relative h-80 rounded-xl overflow-hidden group">
             <Image
               src="/images/coiffure.jpg"
-              alt="Formation logistique"
+              alt="Formation coiffure et beauté"
               fill
               className="object-cover transition-all duration-500 group-hover:scale-110"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             
             <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function SectionSteps() {
+export default function SectionSteps() { 
   return (
     <section className="bg-[#232C64] py-8 md:py-16 px-4 sm:px-6 text-white relative overflow-hidden">
       
@@ -74,7 +74,7 @@ export default function SectionSteps() {
                 <span className="font-medium text-xs font-title">Remplir le dossier.</span>
             </div>
             <p className="text-xs mt-1">
-                L&apos;inscription a été fait en ligne. L&apos;équipe est très réactive !
+                L&apos;inscription a été faite en ligne. L&apos;équipe est très réactive !
             </p>
         </div>
 

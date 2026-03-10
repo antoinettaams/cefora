@@ -12,27 +12,27 @@ const teachers: Teacher[] = [
     role: "Enseignant en programmation",
     image: "/images/teachers1.jpg",
   },
-    {
+  {
     name: "Clémence Kpadé",
     role: "Professeur de science des données",
     image: "/images/teachers2.jpg",
   },
-    {
+  {
     name: "Adama Kossou",
     role: "Spécialiste en intelligence artificielle",
     image: "/images/teachers3.jpg",
   },
-    {
+  {
     name: "Jean-Paul Akpovi",
     role: "Développeur Frontend",
     image: "/images/teachers4.jpg",
   },
-    {
+  {
     name: "Hermann Ulrich HOUNNOUVI",
     role: "Développeur Backend",
     image: "/images/teachers5.jpg",
   },
-    {
+  {
     name: "Viviane Houndé",
     role: "Professeur de cybersécurité",
     image: "/images/teachers6.jpg",
@@ -46,10 +46,9 @@ export default function TeachersPage() {
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-900">
           Enseignants avec les <span className="text-[#232C64]">meilleures qualifications</span>
-
         </h1>
         <p className="mt-2 text-gray-600">
-          Rencontrez nos formateurs experts, passionnés par l’enseignement et le mentorat des étudiants.
+          Rencontrez nos formateurs experts, passionnés par l&apos;enseignement et le mentorat des étudiants.
         </p>
       </div>
 
@@ -66,6 +65,7 @@ export default function TeachersPage() {
                 alt={teacher.name}
                 fill
                 className="rounded-xl object-cover"
+                sizes="(max-width: 768px) 160px, 160px"
               />
             </div>
             <h3 className="text-lg font-semibold text-gray-900">{teacher.name}</h3>

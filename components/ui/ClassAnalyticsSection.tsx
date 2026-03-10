@@ -70,6 +70,7 @@ export const ClassAnalyticsSection = () => {
                   }}
                   className="transition-transform duration-500 hover:scale-105"
                   priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
 
@@ -181,14 +182,14 @@ export const ClassAnalyticsSection = () => {
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-gray-700">Formateurs de qualifiés</span>
+                    <span className="text-gray-700">Formateurs qualifiés</span>
                   </li>
                 </ul>
 
                 {/* CTA Button */}
                 <Link 
                   href="/inscription" 
-                  className="bg-[#DB3234] text-white px-4 py-2 rounded-full font-medium inline-block"
+                  className="bg-[#DB3234] text-white px-4 py-2 rounded-full font-medium inline-block hover:bg-[#c42d2f] transition-colors duration-300"
                 >
                   Voir plus +
                 </Link>
@@ -207,6 +208,7 @@ export const ClassAnalyticsSection = () => {
                     style={{ objectFit: "cover", objectPosition: "center 10%" }}
                     className="transition-transform duration-500 hover:scale-105"
                     priority
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
 

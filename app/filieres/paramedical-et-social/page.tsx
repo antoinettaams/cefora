@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/image";
+import Image from "next/image"; 
 import { BsCheck } from "react-icons/bs";
 import { FaRegClock } from 'react-icons/fa';
 
@@ -31,31 +31,31 @@ export default function Hero() {
           {/* Texte, description */}
           <div className="text-white w-full md:w-1/2 max-w-2xl text-center md:text-left px-2 sm:px-0">
             <h1 className="font-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[3.5rem] font-bold leading-tight">
-              Paramédical & Social
+              Paramédical &amp; Social
             </h1>
             <p className="text-base md:text-lg text-gray-300 mt-3 md:mt-4 max-w-md mx-auto md:mx-0">
-              Formez-vous aux métiers de la santé, du paramédical et de l’accompagnement social pour faire la différence dans votre communauté.
+              Formez-vous aux métiers de la santé, du paramédical et de l&apos;accompagnement social pour faire la différence dans votre communauté.
             </p>
           </div>
 
           {/* Image */}
           <div className="w-full md:w-1/2 relative h-[220px] sm:h-[260px] md:h-[300px] lg:h-[400px] xl:h-[380px]">
             <div className="absolute left-1/2 -translate-x-1/2 bottom-8 w-[180px] h-[90px] sm:w-[220px] sm:h-[110px] md:w-[260px] md:h-[130px] lg:w-[300px] lg:h-[150px] xl:w-[320px] xl:h-[160px] rounded-b-full z-0 bg-gradient-to-b from-yellow-600 to-yellow-100" />
-              <div className="absolute inset-0 flex items-center justify-center z-10">
-                <div className=" relative w-[165px] h-[165px] sm:w-[240px] sm:h-[240px] md:w-[245px] md:h-[245px] lg:w-[310px] lg:h-[340px] xl:w-[320px] xl:h-[320px] max-w-md mx-auto overflow-hidden rounded-b-[50%]">
-                  <Image
-                    src="/images/abouthero.png"
-                    alt="Industrie et Artisanat"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    style={{
-                      objectFit: "cover",
-                      objectPosition: "center 60%",
-                    }}
-                    className="transition-transform duration-500 hover:scale-105"
-                    priority
-                  />
-                </div>
+            <div className="absolute inset-0 flex items-center justify-center z-10">
+              <div className="relative w-[165px] h-[165px] sm:w-[240px] sm:h-[240px] md:w-[245px] md:h-[245px] lg:w-[310px] lg:h-[340px] xl:w-[320px] xl:h-[320px] max-w-md mx-auto overflow-hidden rounded-b-[50%]">
+                <Image
+                  src="/images/abouthero.png"
+                  alt="Paramédical et Social"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "center 60%",
+                  }}
+                  className="transition-transform duration-500 hover:scale-105"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@ export default function Hero() {
             <span className="text-[#0F172A]">Auxiliaire de pharmacie</span>
           </h2>
           <p className="text-gray-500 leading-relaxed max-w-md mx-auto md:mx-0 text-base md:text-lg">
-            Apprenez à assister les pharmacies dans la gestion des stocks, l'accueil et le conseil client.
+            Apprenez à assister les pharmacies dans la gestion des stocks, l&apos;accueil et le conseil client.
           </p>
 
           <div className="grid grid-cols-2 gap-y-4 gap-x-6 justify-items-start md:justify-items-start mt-8 max-w-sm mx-auto md:mx-0">
@@ -121,16 +121,17 @@ export default function Hero() {
           <div className="relative w-[280px] sm:w-[320px] md:w-[350px] h-[180px] sm:h-[220px] md:h-[250px] rounded-xl overflow-hidden shadow-xl z-10">
             <Image
               src="/images/auxilliaire.jpg"
-              alt="Paramédical & Social"
+              alt="Paramédical &amp; Social"
               fill
               className="object-cover"
+              sizes="(max-width: 768px) 280px, (max-width: 1024px) 320px, 350px"
             />
           </div>
         </div>
       </section>
 
       {/* SECTION PLANNING DES COURS */}
-      <section className="-ml-13 bg-white p-8 md:p-16 lg:p-20 font-sans text-gray-800">
+      <section className="bg-white p-8 md:p-16 lg:p-20 font-sans text-gray-800">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-12 text-center md:text-left">
           Planning des cours
         </h1>

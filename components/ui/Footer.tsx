@@ -25,6 +25,7 @@ export default function Footer() {
                                     fill
                                     className="object-cover"
                                     priority
+                                    sizes="(max-width: 640px) 40px, (max-width: 768px) 40px, (max-width: 1024px) 48px, 56px"
                                 />
                             </div>
 

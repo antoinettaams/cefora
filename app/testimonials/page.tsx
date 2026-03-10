@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Testimonials() {
   return (
     <main className="bg-white text-black">
@@ -20,38 +22,50 @@ export default function Testimonials() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Card 1 */}
           <div className="bg-white shadow-lg rounded-2xl p-6 text-center">
-            <img
-              src="https://randomuser.me/api/portraits/men/32.jpg"
-              alt="Ray Newton"
-              className="w-32 h-32 rounded-xl mx-auto mb-4 object-cover"
-            />
+            <div className="relative w-32 h-32 mx-auto mb-4">
+              <Image
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Ray Newton"
+                fill
+                className="rounded-xl object-cover"
+                sizes="(max-width: 768px) 128px, 128px"
+              />
+            </div>
             <h4 className="font-bold text-lg">Michel</h4>
-            <p className="text-sm text-gray-600">“Un endroit intéressant pour étudier”</p>
+            <p className="text-sm text-gray-600">&ldquo;Un endroit intéressant pour étudier&rdquo;</p>
           </div>
 
           {/* Card 2 */}
           <div className="bg-white shadow-lg rounded-2xl p-6 text-center">
-            <img
-              src="https://randomuser.me/api/portraits/men/44.jpg"
-              alt="Norman Cobb"
-              className="w-32 h-32 rounded-xl mx-auto mb-4 object-cover"
-            />
+            <div className="relative w-32 h-32 mx-auto mb-4">
+              <Image
+                src="https://randomuser.me/api/portraits/men/44.jpg"
+                alt="Norman Cobb"
+                fill
+                className="rounded-xl object-cover"
+                sizes="(max-width: 768px) 128px, 128px"
+              />
+            </div>
             <h4 className="font-bold text-lg">Komlan</h4>
             <p className="text-sm text-gray-600">
-              Cefora rend l’apprentissage passionnant et pratique.”
+              &ldquo;Cefora rend l&apos;apprentissage passionnant et pratique.&rdquo;
             </p>
           </div>
 
           {/* Card 3 */}
           <div className="bg-white shadow-lg rounded-2xl p-6 text-center">
-            <img
-              src="https://randomuser.me/api/portraits/men/50.jpg"
-              alt="Norman Cobb"
-              className="w-32 h-32 rounded-xl mx-auto mb-4 object-cover"
-            />
+            <div className="relative w-32 h-32 mx-auto mb-4">
+              <Image
+                src="https://randomuser.me/api/portraits/men/50.jpg"
+                alt="Norman Cobb"
+                fill
+                className="rounded-xl object-cover"
+                sizes="(max-width: 768px) 128px, 128px"
+              />
+            </div>
             <h4 className="font-bold text-lg">Christian</h4>
             <p className="text-sm text-gray-600">
-              “Cefora m’a confié d’excellents projets de stage.”
+              &ldquo;Cefora m&apos;a confié d&apos;excellents projets de stage.&rdquo;
             </p>
           </div>
         </div>
@@ -66,38 +80,50 @@ export default function Testimonials() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Card 1 */}
           <div className="bg-white shadow-lg rounded-2xl p-6 text-center">
-            <img
-              src="https://randomuser.me/api/portraits/men/60.jpg"
-              alt="Ray Newton"
-              className="w-32 h-32 rounded-xl mx-auto mb-4 object-cover"
-            />
+            <div className="relative w-32 h-32 mx-auto mb-4">
+              <Image
+                src="https://randomuser.me/api/portraits/men/60.jpg"
+                alt="Ray Newton"
+                fill
+                className="rounded-xl object-cover"
+                sizes="(max-width: 768px) 128px, 128px"
+              />
+            </div>
             <h4 className="font-bold text-lg">Bidene</h4>
-            <p className="text-sm text-gray-600">“Un endroit formidable pour apprendre.”</p>
+            <p className="text-sm text-gray-600">&ldquo;Un endroit formidable pour apprendre.&rdquo;</p>
           </div>
 
           {/* Card 2 */}
           <div className="bg-white shadow-lg rounded-2xl p-6 text-center">
-            <img
-              src="https://randomuser.me/api/portraits/men/70.jpg"
-              alt="Norman Cobb"
-              className="w-32 h-32 rounded-xl mx-auto mb-4 object-cover"
-            />
+            <div className="relative w-32 h-32 mx-auto mb-4">
+              <Image
+                src="https://randomuser.me/api/portraits/men/70.jpg"
+                alt="Norman Cobb"
+                fill
+                className="rounded-xl object-cover"
+                sizes="(max-width: 768px) 128px, 128px"
+              />
+            </div>
             <h4 className="font-bold text-lg">Chivas</h4>
             <p className="text-sm text-gray-600">
-              “Cefora met à disposition des projets innovants et exceptionnels.”
+              &ldquo;Cefora met à disposition des projets innovants et exceptionnels.&rdquo;
             </p>
           </div>
 
           {/* Card 3 */}
           <div className="bg-white shadow-lg rounded-2xl p-6 text-center">
-            <img
-              src="https://randomuser.me/api/portraits/men/75.jpg"
-              alt="Norman Cobb"
-              className="w-32 h-32 rounded-xl mx-auto mb-4 object-cover"
-            />
+            <div className="relative w-32 h-32 mx-auto mb-4">
+              <Image
+                src="https://randomuser.me/api/portraits/men/75.jpg"
+                alt="Norman Cobb"
+                fill
+                className="rounded-xl object-cover"
+                sizes="(max-width: 768px) 128px, 128px"
+              />
+            </div>
             <h4 className="font-bold text-lg">Rodrigue</h4>
             <p className="text-sm text-gray-600">
-              “Cefora rend chaque étude exceptionnelle et mémorable.”  
+              &ldquo;Cefora rend chaque étude exceptionnelle et mémorable.&rdquo;  
             </p>
           </div>
         </div>

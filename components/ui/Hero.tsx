@@ -21,7 +21,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-12">
         
-        {/* Colonne gauche (Texte) - après l&apos;image sur mobile */}
+        {/* Colonne gauche (Texte) - après l'image sur mobile */}
         <div className="text-white w-full md:w-1/2 max-w-2xl text-center md:text-left px-2 sm:px-0">
           <h1 className="font-title text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] font-bold leading-tight">
             Centre de formation
@@ -37,7 +37,7 @@ export default function Hero() {
           <div className="mt-6 md:mt-8">
             <Link
               href="#"
-              aria-label="Commencer l&apos;inscription"
+              aria-label="Commencer l'inscription"
               className="inline-block bg-[#DB3234] text-white font-semibold text-base md:text-lg py-3 px-6 md:py-3.5 md:px-8 rounded-full transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ffc947]"
             >
               Commencer
@@ -63,7 +63,7 @@ export default function Hero() {
           </div>
 
           <div className="absolute inset-0 flex items-center justify-center z-10">
-            {/* Hauteur fixe pour cadrer l&apos;image */}
+            {/* Hauteur fixe pour cadrer l'image */}
             <div className="relative w-[850px] h-[330px] lg:h-[500px] max-w-md mx-auto">
               <Image
                 src="/images/hero.png"
@@ -88,7 +88,7 @@ export default function Hero() {
               </div>
               <div>
                 <p className="text-xs font-medium text-gray-800">Sophie M.</p>
-                <p className="text-[0.65rem] text-gray-500">&ldquo;Formateurs...&ldquo;</p>
+                <p className="text-[0.65rem] text-gray-500">&ldquo;Formateurs...&rdquo;</p>
               </div>
             </div>
             <div className="bg-white p-2 rounded-lg shadow-lg flex items-center space-x-2 max-w-[160px]">
@@ -97,7 +97,7 @@ export default function Hero() {
               </div>
               <div>
                 <p className="text-xs font-medium text-gray-800">Pierre L.</p>
-                <p className="text-[0.65rem] text-gray-500">&ldquo;Certification...&ldquo;</p>
+                <p className="text-[0.65rem] text-gray-500">&ldquo;Certification...&rdquo;</p>
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function Hero() {
               </div>
               <div>
                 <p className="text-sm font-medium text-gray-800">Sophie M.</p>
-                <p className="text-xs text-gray-500">&ldquo;Formateurs à l&apos;écoute&ldquo;</p>
+                <p className="text-xs text-gray-500">&ldquo;Formateurs à l&apos;écoute&rdquo;</p>
               </div>
             </div>
             <div className="absolute bottom-20 left-0 bg-white p-3 rounded-lg shadow-lg flex items-center space-x-3 max-w-[220px] z-20 mt-6">
@@ -119,7 +119,7 @@ export default function Hero() {
               </div>
               <div>
                 <p className="text-sm font-medium text-gray-800">Pierre L.</p>
-                <p className="text-xs text-gray-500">&ldquo;Certification rapide&ldquo;</p>
+                <p className="text-xs text-gray-500">&ldquo;Certification rapide&rdquo;</p>
               </div>
             </div>
           </div>

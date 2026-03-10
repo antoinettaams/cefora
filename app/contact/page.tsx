@@ -63,7 +63,7 @@ export default function ContactPage() {
                 />
               </div>
 
-              {/* Étoiles autour de l&apos;image */}
+              {/* Étoiles autour de l'image */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 {[
                   { color: "text-white", angle: 25 },

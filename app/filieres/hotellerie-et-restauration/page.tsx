@@ -32,33 +32,33 @@ export default function Restauration() {
           {/* Texte description */}
           <div className="text-white w-full md:w-1/2 max-w-2xl text-center md:text-left px-2 sm:px-0">
             <h1 className="font-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[3.5rem] font-bold leading-tight">
-              Hôtellerie & Restauration
+              Hôtellerie &amp; Restauration
             </h1>
             <p className="text-base md:text-lg text-gray-300 mt-3 md:mt-4 max-w-md mx-auto md:mx-0">
-              Plongez dans l'univers du service, de la cuisine et de l'accueil professionnel. Apprenez les bases de la restauration moderne et du travail en brigade.
+              Plongez dans l&apos;univers du service, de la cuisine et de l&apos;accueil professionnel. Apprenez les bases de la restauration moderne et du travail en brigade.
             </p>
           </div>
 
-         {/* (Image) */}
+          {/* Image */}
           <div className="w-full md:w-1/2 relative h-[220px] sm:h-[260px] md:h-[300px] lg:h-[400px] xl:h-[380px]">
             <div className="absolute left-1/2 -translate-x-1/2 bottom-8 w-[180px] h-[90px] sm:w-[220px] sm:h-[110px] md:w-[260px] md:h-[130px] lg:w-[300px] lg:h-[150px] xl:w-[320px] xl:h-[160px] rounded-b-full z-0 bg-gradient-to-b from-yellow-600 to-yellow-100" />
-              <div className="absolute inset-0 flex items-center justify-center z-10">
-                <div className=" relative w-[165px] h-[165px] sm:w-[240px] sm:h-[240px] md:w-[245px] md:h-[245px] lg:w-[310px] lg:h-[340px] xl:w-[320px] xl:h-[320px] max-w-md mx-auto overflow-hidden rounded-b-[50%]">
-                  <Image
-                    src="/images/abouthero.png"
-                    alt="Industrie et Artisanat"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                      style={{
-                        objectFit: "cover",
-                        objectPosition: "center 60%",
-                      }}
-                    className="transition-transform duration-500 hover:scale-105"
-                    priority
-                  />
-                </div>
+            <div className="absolute inset-0 flex items-center justify-center z-10">
+              <div className="relative w-[165px] h-[165px] sm:w-[240px] sm:h-[240px] md:w-[245px] md:h-[245px] lg:w-[310px] lg:h-[340px] xl:w-[320px] xl:h-[320px] max-w-md mx-auto overflow-hidden rounded-b-[50%]">
+                <Image
+                  src="/images/abouthero.png"
+                  alt="Industrie et Artisanat"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "center 60%",
+                  }}
+                  className="transition-transform duration-500 hover:scale-105"
+                  priority
+                />
               </div>
             </div>
+          </div>
         </div>
       </section>
 
@@ -68,14 +68,14 @@ export default function Restauration() {
           Ce que vous apprendrez
         </h2>
         <p className="text-gray-500 max-w-xl mx-auto mb-12">
-          Maîtrisez toutes les compétences nécessaires pour travailler dans l’hôtellerie et la restauration, de la cuisine à l’accueil, en passant par le service client et la gestion d’établissement.
+          Maîtrisez toutes les compétences nécessaires pour travailler dans l&apos;hôtellerie et la restauration, de la cuisine à l&apos;accueil, en passant par le service client et la gestion d&apos;établissement.
         </p>
 
         {/* Conteneur notions */}
         <div className="flex flex-col items-center gap-6 scale-[0.8] sm:scale-[0.9] md:scale-100 transition-transform duration-300">
           <div className="flex justify-center gap-6">
             {[
-              { color: "#FDBA21", text: "Accueil & Service client", textColor: "#0F172A" },
+              { color: "#FDBA21", text: "Accueil &amp; Service client", textColor: "#0F172A" },
               { color: "#F43F3E", text: "Cuisine professionnelle", textColor: "#fff" },
               { color: "#1E3AFF", text: "Gestion hôtelière", textColor: "#fff" },
             ].map((item, index) => (
@@ -90,7 +90,7 @@ export default function Restauration() {
           <div className="flex justify-center gap-20">
             {[
               { color: "#FDBA21", text: "Techniques de service", textColor: "#0F172A" },
-              { color: "#FDBA21", text: "Hygiène & sécurité", textColor: "#0F172A" },
+              { color: "#FDBA21", text: "Hygiène &amp; sécurité", textColor: "#0F172A" },
             ].map((item, index) => (
               <div key={index} className="flex items-center gap-2 px-6 py-3 rounded-full font-medium whitespace-nowrap shadow-sm"
                    style={{ backgroundColor: item.color, color: item.textColor }}>
@@ -103,7 +103,7 @@ export default function Restauration() {
           <div className="flex justify-center gap-6">
             {[
               { color: "#F43F3E", text: "Boulangerie et Pâtisserie", textColor: "#fff" },
-              { color: "#1E3AFF", text: "Cocktails & Bar", textColor: "#fff" },
+              { color: "#1E3AFF", text: "Cocktails &amp; Bar", textColor: "#fff" },
               { color: "#FDBA21", text: "Projets pratiques", textColor: "#0F172A" },
             ].map((item, index) => (
               <div key={index} className="flex items-center gap-2 px-6 py-3 rounded-full font-medium whitespace-nowrap shadow-sm"
@@ -123,11 +123,11 @@ export default function Restauration() {
         <div className="md:w-1/2 w-full space-y-5 md:space-y-6 text-center md:text-left">
           <h2 className="text-3xl md:text-4xl font-extrabold text-[#0F172A] leading-tight">
             Découvrez la filière <br />
-            <span className="text-[#0F172A]">Hôtellerie & Restauration</span>
+            <span className="text-[#0F172A]">Hôtellerie &amp; Restauration</span>
           </h2>
 
           <p className="text-gray-500 leading-relaxed max-w-md mx-auto md:mx-0 text-base md:text-lg">
-            Cette filière vous prépare à travailler dans les hôtels, restaurants et services de restauration, en maîtrisant la cuisine, le service, l’accueil et la gestion d’établissements professionnels.
+            Cette filière vous prépare à travailler dans les hôtels, restaurants et services de restauration, en maîtrisant la cuisine, le service, l&apos;accueil et la gestion d&apos;établissements professionnels.
           </p>
 
           {/* Liste d’avantages */}
@@ -160,13 +160,14 @@ export default function Restauration() {
               alt="Student in hospitality"
               fill
               className="object-cover"
+              sizes="(max-width: 768px) 280px, (max-width: 1024px) 320px, 350px"
             />
           </div>
         </div>
       </section>
 
       {/* SECTION Planning */}
-      <section className="-ml-13 bg-white p-8 md:p-16 lg:p-20 font-sans text-gray-800">
+      <section className="bg-white p-8 md:p-16 lg:p-20 font-sans text-gray-800">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-12 text-center md:text-left">
           Planning des cours
         </h1>
@@ -179,18 +180,18 @@ export default function Restauration() {
                 </p>
                 <p className="text-base font-medium inline-block align-top mt-2">
                   {item.month}
-                    <br />
+                  <br />
                   {item.year}
                 </p>
                 <div className="flex items-center justify-center md:justify-start mt-3 text-sm text-gray-600">
                   <FaRegClock className="mr-2 text-yellow-600 text-base" />
-                    {item.time}
+                  {item.time}
                 </div>
               </div>
               <div className="border-t border-gray-300 w-full mb-6 max-w-xs md:max-w-none"></div>
-                <p className="text-xl font-semibold mt-4">{item.action}</p>
-              </div>
-            ))}
+              <p className="text-xl font-semibold mt-4">{item.action}</p>
+            </div>
+          ))}
         </div>
       </section>
     </>
